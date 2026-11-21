@@ -9,6 +9,10 @@ description = "Real-time Axum WebSocket server and CLI streaming Solana slots, f
 name = "solana_live_websocket"
 path = "src/lib.rs"
 
+[[bin]]
+name = "solana-live-websocket"
+path = "src/main.rs"
+
 [dependencies]
 live-ws-core = { path = "../live-ws-core" }
 tokio = { workspace = true }
