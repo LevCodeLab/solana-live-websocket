@@ -52,7 +52,13 @@ websocat "ws://127.0.0.1:8080/ws?since_seq=42"
 cargo run -p solana-live-websocket -- serve --port 8080 --cluster devnet
 ```
 
-5. run all unit and real websocket integration tests:
+5. run the self-contained websocket + `?since_seq` replay demo:
+
+```bash
+cargo run -p solana-live-websocket --example ws_stream_client
+```
+
+6. run all unit and real websocket integration tests:
 
 ```bash
 cargo test --workspace
