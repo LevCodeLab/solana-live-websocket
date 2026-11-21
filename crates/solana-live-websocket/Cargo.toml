@@ -1,0 +1,31 @@
+[package]
+name = "solana-live-websocket"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Real-time Axum WebSocket server and CLI streaming Solana slots, forks, candidate banks, and leader handoff windows"
+
+[lib]
+name = "solana_live_websocket"
+path = "src/lib.rs"
+
+[dependencies]
+live-ws-core = { path = "../live-ws-core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+axum = { workspace = true }
+tower-http = { workspace = true }
+tower = { workspace = true }
+futures-util = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+async-trait = { workspace = true }
+thiserror = { workspace = true }
+reqwest = { workspace = true }
+tokio-tungstenite = { workspace = true }
+sha2 = { workspace = true }
+bs58 = { workspace = true }
+
+[lints]
+workspace = true
